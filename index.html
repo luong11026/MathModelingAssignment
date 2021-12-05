@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petri net</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.hcmut.edu.vn/upload/en/images/LogoBK%20(1).jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!--fontheading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md">
+      <a href="#" class="navbar-brand">Petri Net</a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbar-menu"
+      >
+        >Menu
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#item1" class="nav-link">Item 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#item2" class="nav-link">Item 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#item3" class="nav-link">Item 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="#item4" class="nav-link">Item 4</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header><h1>Mathematical Modeling Assignment</h1></header>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Contents</h3>
+          <a href="#item1" class="content-link">
+            <li class="content">Item 1 - Patient Petri net</li>
+          </a>
+          <a href="#item2" class="content-link">
+            <li class="content">Item 2 - Specialist Petri net</li>
+          </a>
+          <a href="#item3" class="content-link">
+            <li class="content">Item 3 - Superimposed Petri net</li>
+          </a>
+          <a href="#item4" class="content-link"
+            ><li class="content">Item 4 - Reachable markings</li></a
+          >
+        </div>
+        <div class="col">
+          <h3>Group Information</h3>
+          <li class="group">Instructors: Mr. Nguyen Van Minh Man</li>
+          <li class="group" id="mr-khuong">Mr. Nguyen An Khuong</li>
+          <li class="group">Class: Mathematical Modeling (CO2011)_CC04</li>
+          <li class="group">
+            Members:
+            <ul>
+              <li class="member">La Vi Luong - 2052590</li>
+              <li class="member">Bui Trung Hai - 2052082</li>
+              <li class="member">Nguyen Ngoc Hoa - 2052485</li>
+              <li class="member">Duong Ngoc Quang Huy - 2052489</li>
+              <li class="member">Nguyen Nam Kha - 2052515</li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="main">
+      <div id="item1">
+        <h3>Item 1 - Patient Petri net</h3>
+        <p>Input a numbers of tokens in each place below and click a transition to fire</p>
+        <label for="wait1">wait:</label>
+        <input type="number" id="wait1" value="0" />
+        <label for="inside1">inside:</label>
+        <input type="number" id="inside1" value="0" />
+        <label for="done1">done:</label>
+        <input type="number" id="done1" value="0" />
+        <button id="btn1">Submit</button><br />
+        <canvas id="Item1" width="800" height="150"></canvas>
+      </div>
+
+      <hr />
+      <div id="item2">
+        <h3>Item 2 - Specialist Petri net</h3>
+        <p>Input a number of tokens in each place below and click a transition to fire</p>
+        <label for="free2">free:</label>
+        <input type="number" id="free2" value="0" />
+        <label for="busy2">busy:</label>
+        <input type="number" id="busy2" value="0" />
+        <label for="docu2">docu:</label>
+        <input type="number" id="docu2" value="0" />
+        <button id="btn2">Submit</button><br />
+        <canvas id="Item2" width="800" height="300"></canvas>
+      </div>
+      <hr />
+      <div id="item3">
+        <h3>Item 3 - Superimposed Petri net</h3>
+        <p>Input a numbers of tokens in each place below and click a transition to fire</p>
+        <label for="wait3">wait:</label>
+        <input type="number" id="wait3" value="0" />
+        <label for="busy3">busy:</label>
+        <input type="number" id="busy3" value="0" />
+        <label for="done3">done:</label>
+        <input type="number" id="done3" value="0" />
+        <label for="inside3">inside:</label>
+        <input type="number" id="inside3" value="0" />
+        <label for="free3">free:</label>
+        <input type="number" id="free3" value="0" />
+        <label for="docu3">docu:</label>
+        <input type="number" id="docu3" value="0" />
+        <button id="btn3">Submit</button><br />
+        <canvas id="Item3" width="800" height="400"></canvas>
+        <hr />
+      </div>
+      <div id="item4">
+        <h3>Item 4 - Reachable markings</h3>
+        <p>Input number of tokens in each place below and hit the <i>Submit</i> button to get all the reachable markings and firing sequences that the Petri net has</p>
+        <label for="wait4">wait:</label>
+        <input type="number" id="wait4"  value="0"/>
+        <label for="free4">free:</label>
+        <input type="number" id="free4"  value="0"/>
+        <label for="busy4">busy:</label>
+        <input type="number" id="busy4" value="0" />
+        <label for="inside4">inside:</label>
+        <input type="number" id="inside4"  value="0"/>
+        <label for="docu4">docu:</label>
+        <input type="number" id="docu4"  value="0"/>
+        <label for="done4">done:</label>
+        <input type="number" id="done4"  value="0"/>
+        <button id="btn4">Submit</button>
+        <br />
+        <p class="count">Number of firing sequences: <p class="count" id="count"></p></p>
+        
+        <textarea id="xuat" cols="100" rows="10"></textarea>
+      </div>
+    </div>
+    <script src="Item1-2-3.js"></script>
+    <script src="Item4.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

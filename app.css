@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+  background-color: rgb(221, 221, 221);
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+  background-color: gray;
+  transition: background-color ease-in-out 0.25s;
+}
+
+#item1,
+#item2,
+#item3,
+#item4 {
+  padding-top: 55px;
+}
+
+#item4 {
+  height: 45rem;
+}
+
+#count {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#xuat {
+  padding: 1em 2em;
+  box-shadow: 5px 5px 15px gray;
+  width: 90%;
+}
+
+.count {
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+}
+
+input {
+  width: 8vw;
+}
+
+.navbar-toggler {
+  color: white;
+  border: 1px solid white;
+}
+
+.container {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.group,
+.content {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#mr-khuong {
+  margin-left: 90px;
+}
+
+.member {
+  list-style-type: circle;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #14213d;
+}
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #b1b1b1;
+  transition: color ease-in-out 0.25s;
+}
+
+.content-link:hover {
+  color: #14213d;
+  transition: color ease-in-out 0.25s;
+}
+
+::selection {
+  color: white;
+  background-color: #14213d;
+}
